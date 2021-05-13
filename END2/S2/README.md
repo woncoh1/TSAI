@@ -2,4 +2,4 @@
 
 ## Assignment: Backpropagation of Errors in Excel Spreadsheet
 
-![backpropagation](https://user-images.githubusercontent.com/12987758/118139783-adb39200-b442-11eb-88a9-092f074bfac8.PNG)
+![END2S2A-Backprop_Excel](https://user-images.githubusercontent.com/12987758/118140939-d1c3a300-b443-11eb-822f-1dc823f7ea63.PNG)
