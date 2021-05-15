@@ -1,8 +1,12 @@
 # Session 2 - BackProp, Embeddings and Language Models
 
-[0. Backpropagation of Errors: Excel Spreadsheet Implementation](#excel)  
-[1. Parts List](#parts)  
-[2. Major Steps](#steps)  
+Assignment:  
+Implementation of Backpropagation of Errors using Excel Spreadsheet
+
+Table of Contents:  
+[1. Excel Spreadsheet](#excel)  
+[2. Parts List](#parts)  
+[3. Major Steps](#steps)  
 
 <a name="excel"/>
 
@@ -15,13 +19,13 @@
 
 ## 1. Parts List
 
-### 1-0 Network Architecture
+### 1-1 Network Architecture
 
 - Fully connected layers
 - 2 neurons per layer
 - 3 layers: input, hidden, output
 
-### 1-1 Neuron
+### 1-2 Neuron
 
 - i1, i2: input-layer neurons
 - h1, h2: hidden-layer neurons (linear summation)
@@ -29,7 +33,7 @@
 - o1, o2: output-layer neurons (linear summation)
     - a_o1, a_o2 (out_o1, out_o2 in the screenshot image): non-linear activation (sigmoid function)
 
-### 1-2 Synaptic Weight
+### 1-3 Synaptic Weight
 
 1. Layer 1 → 2
     - w1: i1 → h1
@@ -49,41 +53,43 @@
 
 The following steps repeat in a loop:
 
-1. Forward Pass (error calculation)
+### 2-1 Forward Pass (error calculation)
     
-    1. Linear summation
-        - h1 = w1 * i1 + w2 * i2
-        - h2 = w3 * i1 + w4 * i2
+1. Linear summation
+    - h1 = w1 * i1 + w2 * i2
+    - h2 = w3 * i1 + w4 * i2
     
-    2. Non-linear activation
-        - a_h1 = σ(h1) = 1 / (1 + exp(-h1))
-        - a_h2 = σ(h2) = 1 / (1 + exp(-h2))
+2. Non-linear activation
+    - a_h1 = σ(h1) = 1 / (1 + exp(-h1))
+    - a_h2 = σ(h2) = 1 / (1 + exp(-h2))
     
-    3. Linear summation
-        - o1 = w5 * a_h1 + w6 * a_h2
-        - o2 = w7 * a_h1 + w8 * a_h2
+3. Linear summation
+    - o1 = w5 * a_h1 + w6 * a_h2
+    - o2 = w7 * a_h1 + w8 * a_h2
         
-    4. Non-linear activation
-        - a_o1 = σ(o1)
-        - a_o2 = σ(o2)
+4. Non-linear activation
+    - a_o1 = σ(o1)
+    - a_o2 = σ(o2)
     
-    5. Loss function
-        - E1 = 1/2 * (t1 - a_o1)²
-        - E2 = 1/2 * (t2 - a_o2)²
-        - E_Total = E1 + E2 (E_Total is abbreviated as E in the screenshot image)
+5. Loss function
+    - E1 = 1/2 * (t1 - a_o1)²
+    - E2 = 1/2 * (t2 - a_o2)²
+    - E_Total = E1 + E2 (E_Total is abbreviated as E in the screenshot image)
 
-2. Backward Pass (gradient calculation)
+### 2-2 Backward Pass (gradient calculation)
     
-    1. Weights **after** hidden layer (no branching)
-        - ∂E/∂w5
-        - ∂E/∂w6
-        - ∂E/∂w7
-        - ∂E/∂w8
-    
-    2. Weights **before** hidden layer (with branching)
-        - ∂E/∂w1
-        - ∂E/∂w2
-        - ∂E/∂w3
-        - ∂E/∂w4
+1. Weights **after** hidden layer
+    - ∂E/∂w5
+    - ∂E/∂w6
+    - ∂E/∂w7
+    - ∂E/∂w8
 
-3. Parameter Optimization (weight update)
+2. **Branching** of gradient flow after hidden layer
+
+3. Weights **before** hidden layer
+    - ∂E/∂w1
+    - ∂E/∂w2
+    - ∂E/∂w3
+    - ∂E/∂w4
+
+### 2-3 Parameter Optimization (weight update)
