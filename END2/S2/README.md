@@ -73,5 +73,17 @@ The following steps repeat in a loop:
         - E_Total = E1 + E2 (E_Total is abbreviated as E in the screenshot image)
 
 2. Backward Pass (gradient calculation)
+    
+    1. Weights **after** hidden layer (no branching)
+        - ∂E/∂w5
+        - ∂E/∂w6
+        - ∂E/∂w7
+        - ∂E/∂w8
+    
+    2. Weights **before** hidden layer (with branching)
+        - ∂E/∂w1
+        - ∂E/∂w2
+        - ∂E/∂w3
+        - ∂E/∂w4
 
 3. Parameter Optimization (weight update)
