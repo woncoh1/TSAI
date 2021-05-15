@@ -50,17 +50,27 @@
 The following steps repeat in a loop:
 
 1. Forward Pass (error calculation)
-    - h1 = w1 * i1 + w2 * i2
-    - h2 = w3 * i1 + w4 * i2
-    - a_h1 = σ(h1) = 1 / (1 + exp(-h1))
-    - a_h2 = σ(h2) = 1 / (1 + exp(-h2))
-    - o1 = w5 * a_h1 + w6 * a_h2
-    - o2 = w7 * a_h1 + w8 * a_h2
-    - a_o1 = σ(o1)
-    - a_o2 = σ(o2)
-    - E1 = 1/2 * (t1 - a_o1)²
-    - E2 = 1/2 * (t2 - a_o2)²
-    - E_Total = E1 + E2 (E_Total is abbreviated as E in the screenshot image)
+    
+    1. Linear summation
+        - h1 = w1 * i1 + w2 * i2
+        - h2 = w3 * i1 + w4 * i2
+    
+    2. Non-linear activation
+        - a_h1 = σ(h1) = 1 / (1 + exp(-h1))
+        - a_h2 = σ(h2) = 1 / (1 + exp(-h2))
+    
+    3. Linear summation
+        - o1 = w5 * a_h1 + w6 * a_h2
+        - o2 = w7 * a_h1 + w8 * a_h2
+        
+    4. Non-linear activation
+        - a_o1 = σ(o1)
+        - a_o2 = σ(o2)
+    
+    5. Loss function
+        - E1 = 1/2 * (t1 - a_o1)²
+        - E2 = 1/2 * (t2 - a_o2)²
+        - E_Total = E1 + E2 (E_Total is abbreviated as E in the screenshot image)
 
 2. Backward Pass (gradient calculation)
 
