@@ -1,13 +1,17 @@
 # Session 2 - BackProp, Embeddings and Language Models
 
-1. **Implement backpropagation of errors using Excel Spreadsheet**
-2. Static word embeddings
-3. Contextual word embeddings (language models)
+[0. Backpropagation of Errors: Excel Spreadsheet Implementation](#excel)
+[1. Parts List](#parts)
+[2. Major Steps](#steps)
+
+<a name="excel"/>
 
 ## 0. Assignment: Backpropagation of Errors in Excel Spreadsheet
 
 (Please zoom in to read details)
 ![END2S2A-Backprop_Excel](https://user-images.githubusercontent.com/12987758/118140939-d1c3a300-b443-11eb-822f-1dc823f7ea63.PNG)
+
+<a name="parts"/>
 
 ## 1. Parts List
 
@@ -38,6 +42,8 @@
     - w6: a_h2 → o1
     - w7: a_h1 → o2
     - w8: a_h2 → o2
+
+<a name="steps"/>
 
 ## 2. Major Steps 
 
