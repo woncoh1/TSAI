@@ -1,8 +1,8 @@
 # Session 2 - BackProp, Embeddings and Language Models
 
-[0. Backpropagation of Errors: Excel Spreadsheet Implementation](#excel)
-[1. Parts List](#parts)
-[2. Major Steps](#steps)
+[0. Backpropagation of Errors: Excel Spreadsheet Implementation](#excel)  
+[1. Parts List](#parts)  
+[2. Major Steps](#steps)  
 
 <a name="excel"/>
 
