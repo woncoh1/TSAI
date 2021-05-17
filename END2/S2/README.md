@@ -93,3 +93,12 @@ The following steps repeat in a loop:
     - ∂E/∂w4
 
 ### 2-3 Parameter Optimization (weight update)
+wn = wn - η * ∂E/∂wn
+- w1 = w1 - η * ∂E/∂w1
+- w2 = w2 - η * ∂E/∂w2
+- w3 = w3 - η * ∂E/∂w3
+- w4 = w4 - η * ∂E/∂w4
+- w5 = w5 - η * ∂E/∂w5
+- w6 = w6 - η * ∂E/∂w6
+- w7 = w7 - η * ∂E/∂w7
+- w8 = w8 - η * ∂E/∂w8
