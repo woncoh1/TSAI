@@ -68,8 +68,8 @@ The following steps repeat in a loop:
     - o2 = w7 * a_h1 + w8 * a_h2
         
 4. Non-linear activation
-    - a_o1 = σ(o1)
-    - a_o2 = σ(o2)
+    - a_o1 = σ(o1) = 1 / (1 + exp(-o1))
+    - a_o2 = σ(o2) = 1 / (1 + exp(-o2))
     
 5. Loss function
     - E1 = 1/2 * (t1 - a_o1)²
