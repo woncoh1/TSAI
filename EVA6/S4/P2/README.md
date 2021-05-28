@@ -5,7 +5,7 @@ Table of Contents:
 [2. Problem](#problem)  
 [3. Solution](#solution)  
 [4. Result](#result)  
-
+[5. Reference](#reference)  
 
 <a name="instruction"/>
 
@@ -74,6 +74,8 @@ Table of Contents:
     - 19,240
 - Num. of Epochs
     - 19 (maximum test accuracy starting from epoch 16)
+
+<a name="reference"/>
 
 ## Reference
 
