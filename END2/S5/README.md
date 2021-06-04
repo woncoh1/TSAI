@@ -1,6 +1,6 @@
 # Session 5 - First Hands On
 
-## Assignment Instructions
+## Instruction
 
 - Look at [this code](https://colab.research.google.com/drive/19wZi7P0Tzq9ZxeMz5EDmzfWFBLFWe6kN?usp=sharing&pli=1&authuser=0) above. It has additional details on "Back Translate", i.e. using Google translate to convert the sentences. It has "random_swap" function, as well as "random_delete". 
 
@@ -11,3 +11,36 @@
 - Train your model and achieve **60%+ validation/test accuracy**. Upload your collab file on GitHub with readme that contains details about your assignment/word (minimum **250 words**), **training logs showing final validation accuracy, and outcomes for 10 example inputs from the test/validation data**.
 
 - **You must submit before DUE date (and not "until" date)**.
+
+## Summary
+
+Brief description of the problem, solution and results
+
+### Problem
+
+- Type
+    - Classification
+- Task
+    - Multi-class (five-class) sentiment analysis of single sentences
+
+### Solution
+
+- Data
+    - [Stanford Sentiment Treebank](https://nlp.stanford.edu/sentiment/treebank.html)
+- Model Architecture
+    - Recurrent neural network ([GRU](https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21))
+- Loss Function
+    - Cross entropy (`F.log_softmax()` + `nn.NLLLoss()`)
+- Optimizer
+    - [Adam](https://ruder.io/optimizing-gradient-descent/index.html#adam)
+
+### Result
+
+- Accuracy
+    - Test: 72.04 %
+    - Validation: 72.13 %
+    - Training: 80.61 %
+- Num. of Parameters
+    - 2,587,005
+- Num. of Epochs
+    - 20
