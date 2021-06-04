@@ -1,5 +1,15 @@
 # Session 5 - First Hands On
 
+Table of Contents:
+
+- d
+
+
+The action of every agent <br />
+  into the world <br />
+starts <br />
+  from their physical selves. <br />
+
 ## Instruction
 
 - Look at [this code](https://colab.research.google.com/drive/19wZi7P0Tzq9ZxeMz5EDmzfWFBLFWe6kN?usp=sharing&pli=1&authuser=0) above. It has additional details on "Back Translate", i.e. using Google translate to convert the sentences. It has "random_swap" function, as well as "random_delete". 
@@ -36,10 +46,10 @@ Brief description of the problem, solution and results
 
 ### Result
 
-- Accuracy
-    - Test: 72.04 %
-    - Validation: 72.13 %
-    - Training: 80.61 %
+- Test Accuracy
+    -  72.04 %
+- Training Accuracy
+    - 80.61 %
 - Num. of Parameters
     - 2,587,005
 - Num. of Epochs
@@ -47,11 +57,11 @@ Brief description of the problem, solution and results
 - Training Log
     - Epoch: 1
         - Train Loss: 1.533 | Train Acc: 34.45%
-        - Val.  Loss: 1.476 |  Val. Acc: 41.04% 
+        - Valid Loss: 1.476 | Valid Acc: 41.04% 
 
     - Epoch: 2
         - Train Loss: 1.471 | Train Acc: 41.70%
-        - Val.  Loss: 1.432 |  Val. Acc: 46.29% 
+        - Valid Loss: 1.432 |  Val. Acc: 46.29% 
 
     - Epoch: 3
         - Train Loss: 1.413 | Train Acc: 47.71%
@@ -63,11 +73,11 @@ Brief description of the problem, solution and results
 
     - Epoch: 5
         - Train Loss: 1.337 | Train Acc: 56.03%
-        -  Val. Loss: 1.358 |  Val. Acc: 53.75% 
+        - Valid Loss: 1.358 | Valid Acc: 53.75% 
 
     - Epoch: 6
         - Train Loss: 1.298 | Train Acc: 60.05%
-        -  Val. Loss: 1.319 |  Val. Acc: 57.87% 
+        - Valid Loss: 1.319 | Valid Acc: 57.87% 
 
     - Epoch: 7
        -  Train Loss: 1.269 | Train Acc: 63.09%
@@ -95,7 +105,7 @@ Brief description of the problem, solution and results
 
     - Epoch: 13
        -  Train Loss: 1.162 | Train Acc: 74.07%
-       -   Val. Loss: 1.238 |  Val. Acc: 66.24% 
+       -   Val. Loss: 1.238 |  Val. Acc: 66.24%
 
     - Epoch: 14
        -  Train Loss: 1.148 | Train Acc: 75.46%
